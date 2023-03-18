@@ -1,12 +1,13 @@
 package org.example.Data;
 
-import org.example.Commands.PointingMethods;
+import java.util.Map;
 
 public interface Database {
-    void CreateRace(int year, String name, int number, double multiplier);
-    void CreateResult(int position, String racer, String team);
-    void FinishRace();
-    void GetStandings(int year);
-    void GetStandings(int year, int number);
-    void SetPointingMethod(PointingMethods pointingMethod);
+    void CreateRace(int year, String name, int number, double multiplier) throws Exception;
+    void CreateResult(int position, String driver, String team) throws Exception;
+    void FinishRace() throws Exception;
+    void SelectRaces(int year) throws Exception;
+    void SelectRaces(int year, int number) throws Exception;
+    Map<String, Integer> GetStandings(PointingMethods pointingMethod) throws Exception;
+    void SetFastest(String driver, String team);
 }

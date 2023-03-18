@@ -1,13 +1,15 @@
 package org.example.Commands;
 
+import org.example.Data.Database;
+
 public class ExitCommand implements Command{
     @Override
-    public void Execute() {
+    public void Execute(Database database) {
 
     }
 
     @Override
-    public boolean SetParameters(String[] parameters) {
-        return false;
+    public void SetParameters(String[] parameters) {
+        return;
     }
 }

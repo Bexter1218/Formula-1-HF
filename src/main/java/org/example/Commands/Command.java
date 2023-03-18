@@ -1,6 +1,8 @@
 package org.example.Commands;
 
+import org.example.Data.Database;
+
 public interface Command {
-    void Execute();
-    boolean SetParameters(String[] parameters);
+    void Execute(Database database);
+    void SetParameters(String[] parameters);
 }

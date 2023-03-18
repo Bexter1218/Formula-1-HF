@@ -20,13 +20,13 @@ public class Parser {
     private static Command getCommand(String verb) {
         Command command = null;
         switch (verb){
-            case "RACE": command = new RaceCommand();
-            case "RESULT": command = new ResultCommand();
-            case "FASTEST": command = new FastestCommand();
-            case "FINISH": command = new FinishCommand();
-            case "QUERY": command = new QueryCommand();
-            case "POINT": command = new PointCommand();
-            case "EXIT": command = new ExitCommand();
+            case "RACE": command = new RaceCommand();break;
+            case "RESULT": command = new ResultCommand();break;
+            case "FASTEST": command = new FastestCommand();break;
+            case "FINISH": command = new FinishCommand();break;
+            case "QUERY": command = new QueryCommand();break;
+            case "POINT": command = new PointCommand();break;
+            case "EXIT": command = new ExitCommand();break;
         }
         return command;
     }

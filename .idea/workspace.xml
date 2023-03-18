@@ -4,31 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c8a9f4d-6a30-40a3-8d1c-329532f861f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input-hf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/FastestCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/FinishCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointingMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RaceCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ResultCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Race.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Parser.java" afterDir="false" />
+    <list default="true" id="1c8a9f4d-6a30-40a3-8d1c-329532f861f5" name="Changes" comment="architecture only">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/IntermediateQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/FastestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/FastestCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/FinishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/FinishCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RaceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RaceCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ResultCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ResultCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,11 +105,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679126420622</updated>
-      <workItem from="1679126422540" duration="3427000" />
+      <workItem from="1679126422540" duration="14698000" />
     </task>
+    <task id="LOCAL-00001" summary="architecture only">
+      <created>1679129906940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679129906940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="architecture only" />
+    <option name="LAST_COMMIT_MESSAGE" value="architecture only" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Data/Query.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

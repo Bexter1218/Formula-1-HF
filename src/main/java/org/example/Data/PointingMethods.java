@@ -1,4 +1,4 @@
-package org.example.Commands;
+package org.example.Data;
 
 public enum PointingMethods {
     CLASSIC,
