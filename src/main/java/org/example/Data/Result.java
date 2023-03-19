@@ -20,4 +20,8 @@ public class Result {
     public String getRacer() {
         return racer;
     }
+
+    public String getTeam() {
+        return team;
+    }
 }

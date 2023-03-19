@@ -8,6 +8,7 @@ public class QueryCommand implements Command{
     @Override
     public void Execute(Database database) {
         if(number == -1){
+            System.out.println("Standings in "+ year);
             try {
                 database.SelectRaces(year);
             } catch (Exception e) {
@@ -16,6 +17,7 @@ public class QueryCommand implements Command{
             return;
         }
         try {
+            System.out.println("Standings in "+ year + " after race " + number);
             database.SelectRaces(year, number);
         } catch (Exception e) {
             System.out.println(e);

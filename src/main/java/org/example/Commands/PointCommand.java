@@ -11,7 +11,13 @@ public class PointCommand implements Command{
     @Override
     public void Execute(Database database) {
         try {
-            Map<String, Integer> standings = database.GetStandings(method);
+            System.out.println("Drivers:");
+            Map<String, Integer> standings = database.GetDriverStandings(method);
+            standings.entrySet().stream()
+                    .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                    .forEach(System.out::println);
+            System.out.println("Teams:");
+            standings = database.GetTeamStandings(method);
             standings.entrySet().stream()
                     .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                     .forEach(System.out::println);

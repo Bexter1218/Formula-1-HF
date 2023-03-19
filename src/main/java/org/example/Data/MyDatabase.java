@@ -56,10 +56,18 @@ public class MyDatabase implements Database{
     }
 
     @Override
-    public Map<String, Integer> GetStandings(PointingMethods pointingMethod) throws Exception {
+    public Map<String, Integer> GetDriverStandings(PointingMethods pointingMethod) throws Exception {
         if(selected == null)
             throw new Exception("Must start a query before.");
-        Map<String, Integer> ret = Query.getStandings(pointingMethod, selected);
+        Map<String, Integer> ret = Query.getDriverStandings(pointingMethod, selected);
+        return ret;
+    }
+
+    @Override
+    public Map<String, Integer> GetTeamStandings(PointingMethods pointingMethod) throws Exception {
+        if(selected == null)
+            throw new Exception("Must start a query before.");
+        Map<String, Integer> ret = Query.getTeamStandings(pointingMethod, selected);
         selected = null;
         return ret;
     }
