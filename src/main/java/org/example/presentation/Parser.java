@@ -11,8 +11,13 @@ public class Parser {
         System.arraycopy(words, 1, parameters, 0, words.length - 1);
         Command command = getCommand(words[0]);
         if (command == null)
-            throw new NoSuchElementException("Unknown command.");
-        command.SetParameters(parameters);
+            throw new NoSuchElementException("Unknown command: " + line);
+        try {
+            command.SetParameters(parameters);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage() + " " + line);
+        }
         return command;
     }
 

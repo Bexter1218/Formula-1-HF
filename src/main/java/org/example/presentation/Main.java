@@ -7,6 +7,7 @@ import org.example.data.MyDatabase;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +23,9 @@ public class Main {
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+        catch (NoSuchElementException e){
+            System.out.println(e.getMessage());
         }
     }
 }

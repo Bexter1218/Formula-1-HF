@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c8a9f4d-6a30-40a3-8d1c-329532f861f5" name="Changes" comment="Refactoring">
-      <change beforePath="$PROJECT_DIR$/input-hf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-hf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input-hf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/MyDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/MyDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/presentation/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/presentation/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679126420622</updated>
-      <workItem from="1679126422540" duration="25914000" />
+      <workItem from="1679126422540" duration="27535000" />
     </task>
     <task id="LOCAL-00001" summary="architecture only">
       <created>1679129906940</created>
@@ -136,5 +140,16 @@
     <MESSAGE value="Prints out more stuff" />
     <MESSAGE value="Refactoring" />
     <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/data/MyDatabase.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

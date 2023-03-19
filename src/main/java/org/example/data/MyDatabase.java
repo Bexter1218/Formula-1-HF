@@ -45,6 +45,8 @@ public class MyDatabase implements Database{
 
     @Override
     public  void SelectRaces(int year) throws Exception {
+         if(currentRace != null)
+            throw new Exception("Must finish the race before starting a query.");
         if(selected != null)
             throw new Exception("Must finish the previous query before starting a new one.");
         selected = selectRacesByQuery(new Query(year));
@@ -52,6 +54,8 @@ public class MyDatabase implements Database{
 
     @Override
     public  void SelectRaces(int year, int number) throws Exception {
+        if(currentRace != null)
+            throw new Exception("Must finish the race before starting a query.");
         if(selected != null)
             throw new Exception("Must finish the previous query before starting a new one.");
         selected = selectRacesByQuery(new Query(year, number));
