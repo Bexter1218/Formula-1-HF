@@ -1,6 +1,6 @@
-package org.example.Commands;
+package org.example.commands;
 
-import org.example.Data.Database;
+import org.example.data.Database;
 
 public interface Command {
     void Execute(Database database);

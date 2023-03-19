@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c8a9f4d-6a30-40a3-8d1c-329532f861f5" name="Changes" comment="works on good input format">
+    <list default="true" id="1c8a9f4d-6a30-40a3-8d1c-329532f861f5" name="Changes" comment="Prints out more stuff">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/query/PointingMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/query/Query.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-hf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input-hf.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/FastestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Fastest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/FinishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Finish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PointCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/QueryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RaceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ResultCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/commands/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/IntermediateQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/MyDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/MyDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/PointingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/query/PointingMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/race/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/race/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presentation/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/presentation/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +54,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2NB94WQNEliHcmcCqd4MrQQr66b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,10 +71,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,11 +87,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Presentation.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.example.presentation.Main" />
       <module name="Formula-1Database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Presentation.*" />
+          <option name="PATTERN" value="org.example.presentation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679126420622</updated>
-      <workItem from="1679126422540" duration="17960000" />
+      <workItem from="1679126422540" duration="25414000" />
     </task>
     <task id="LOCAL-00001" summary="architecture only">
       <created>1679129906940</created>
@@ -111,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679173286988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Prints out more stuff">
+      <created>1679212490351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679212490351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="architecture only" />
     <MESSAGE value="works on good input format" />
-    <option name="LAST_COMMIT_MESSAGE" value="works on good input format" />
+    <MESSAGE value="Prints out more stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prints out more stuff" />
   </component>
 </project>

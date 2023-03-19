@@ -1,4 +1,9 @@
-package org.example.Data;
+package org.example.data;
+
+import org.example.data.query.PointingMethods;
+import org.example.data.query.Query;
+import org.example.data.race.Race;
+import org.example.data.race.Result;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,13 +11,11 @@ import java.util.Map;
 
 public class MyDatabase implements Database{
 
-    private  Race currentRace;
-    private List<Race> races;
+    private Race currentRace;
+    private final List<Race> races;
     private List<Race> selected;
-    private List<Result> results;
     public MyDatabase(){
         races = new ArrayList<>();
-        results = new ArrayList<>();
     }
     @Override
     public  void CreateRace(int year, String name, int number, double multiplier) throws Exception {
@@ -27,9 +30,8 @@ public class MyDatabase implements Database{
     public  void CreateResult(int position, String driver, String team) throws Exception {
         if(currentRace == null)
             throw new Exception("Open a race first.");
-        Result result = new Result(currentRace, position, driver, team);
+        Result result = new Result(position, driver, team);
         currentRace.AddResult(result);
-        results.add(result);
     }
 
     @Override
@@ -52,30 +54,25 @@ public class MyDatabase implements Database{
     public  void SelectRaces(int year, int number) throws Exception {
         if(selected != null)
             throw new Exception("Must finish the previous query before starting a new one.");
-        selected = selectRacesByQuery(new IntermediateQuery(year, number));
+        selected = selectRacesByQuery(new Query(year, number));
     }
 
     @Override
-    public Map<String, Integer> GetDriverStandings(PointingMethods pointingMethod) throws Exception {
+    public Map<String, Double> GetDriverStandings(PointingMethods pointingMethod) throws Exception {
         if(selected == null)
             throw new Exception("Must start a query before.");
-        Map<String, Integer> ret = Query.getDriverStandings(pointingMethod, selected);
-        return ret;
+        return Query.getDriverStandings(pointingMethod, selected);
     }
 
     @Override
-    public Map<String, Integer> GetTeamStandings(PointingMethods pointingMethod) throws Exception {
+    public Map<String, Double> GetTeamStandings(PointingMethods pointingMethod) throws Exception {
         if(selected == null)
             throw new Exception("Must start a query before.");
-        Map<String, Integer> ret = Query.getTeamStandings(pointingMethod, selected);
+        Map<String, Double> ret = Query.getTeamStandings(pointingMethod, selected);
         selected = null;
         return ret;
     }
 
-    @Override
-    public void SetFastest(String driver, String team) {
-        currentRace.setFastest(new Driver(driver, team));
-    }
 
     private List<Race> selectRacesByQuery(Query currentQuery){
         List<Race> out = new ArrayList<>();

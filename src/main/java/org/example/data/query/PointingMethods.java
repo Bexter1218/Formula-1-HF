@@ -1,4 +1,4 @@
-package org.example.Data;
+package org.example.data.query;
 
 public enum PointingMethods {
     CLASSIC,

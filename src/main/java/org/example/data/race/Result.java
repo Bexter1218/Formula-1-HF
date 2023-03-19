@@ -1,17 +1,16 @@
-package org.example.Data;
+package org.example.data.race;
 
 public class Result {
-    public Result(Race race,int position, String racer, String team){
-        this.race = race;
+    public Result(int position, String racer, String team){
         this.position = position;
         this.racer = racer;
         this.team = team;
     }
-    private Race race;
-    private int position;
 
-    private String racer;
-    private String team;
+    private final int position;
+
+    private final String racer;
+    private final String team;
 
     public int getPosition() {
         return position;

@@ -1,11 +1,10 @@
-package org.example.Presentation;
+package org.example.presentation;
 
-import org.example.Commands.Command;
-import org.example.Data.Database;
-import org.example.Data.MyDatabase;
+import org.example.commands.Command;
+import org.example.data.Database;
+import org.example.data.MyDatabase;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -21,8 +20,6 @@ public class Main {
                     command.Execute(db);
                 }
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

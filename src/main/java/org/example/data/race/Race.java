@@ -1,4 +1,4 @@
-package org.example.Data;
+package org.example.data.race;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,19 +11,18 @@ public class Race {
         this.multiplier = multiplier;
         this.results = new ArrayList<>();
     }
-    private int year;
-    private String name;
-    private int number;
-    private double multiplier;
-    private List<Result> results;
-    private Driver fastest;
-
-    public int getYear() {
-        return year;
-    }
+    private final int year;
+    private final int number;
+    private final String name;
+    private final double multiplier;
+    private final List<Result> results;
 
     public String getName() {
         return name;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     public int getNumber() {
@@ -34,13 +33,6 @@ public class Race {
         return multiplier;
     }
 
-    public Driver getFastest() {
-        return fastest;
-    }
-
-    public void setFastest(Driver fastest) {
-        this.fastest = fastest;
-    }
 
     public List<Result> getResults() {
         return results;

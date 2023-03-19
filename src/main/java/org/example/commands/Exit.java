@@ -1,8 +1,8 @@
-package org.example.Commands;
+package org.example.commands;
 
-import org.example.Data.Database;
+import org.example.data.Database;
 
-public class ExitCommand implements Command{
+public class Exit implements Command{
     @Override
     public void Execute(Database database) {
 
@@ -10,6 +10,7 @@ public class ExitCommand implements Command{
 
     @Override
     public void SetParameters(String[] parameters) {
-        return;
+
     }
+
 }
